@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code!" />
+
+    <Button
+        android:id="@+id/database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Database!" />
+    
+    <Button
+        android:id="@+id/databaseOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Database!" />
+
+    <Button
+        android:id="@+id/querycheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Log In/Log Out Data" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Data." />
+
+    <!-- 
+    		THE FOLLLOWING BUTTON IS THE "SAVE LOG DATA BUTTON".
+    		I REMOVED IT BECAUSE LOG IN/LOG OUT DATA ARE WRITTEN INTO THE TEXT FILE AS THE USER PRESSES LOG IN/LOG OUT
+     -->
+    
+    <!--
+    <Button
+        android:id="@+id/exportToText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Log Data" />
+	 -->
+
+    <Button
+        android:id="@+id/checkExportData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Log File" />
+    
+    <TextView 
+        android:maxLines = "11"
+
+		android:scrollbars = "vertical"
+        
+    	android:id="@+id/text_view" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+</LinearLayout>
